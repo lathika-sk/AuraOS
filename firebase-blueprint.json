@@ -1,0 +1,83 @@
+{
+  "databases": {
+    "ai-studio-1d122c67-138b-4076-bb73-598004aa0c1b": {
+      "collections": {
+        "patients": {
+          "fields": {
+            "id": { "type": "string" },
+            "name": { "type": "string" },
+            "age": { "type": "number" },
+            "gender": { "type": "string" },
+            "phone": { "type": "string" },
+            "city": { "type": "string" },
+            "address": { "type": "string" },
+            "condition": { "type": "string" },
+            "procedure": { "type": "string" },
+            "cost": { "type": "number" },
+            "lengthOfStay": { "type": "number" },
+            "readmissionFlag": { "type": "boolean" },
+            "outcome": { "type": "string" },
+            "satisfactionScore": { "type": "number" }
+          },
+          "indexes": []
+        },
+        "queue": {
+          "fields": {
+            "tokenNumber": { "type": "number" },
+            "patientId": { "type": "string" },
+            "patientName": { "type": "string" },
+            "assignedDoctorId": { "type": "string" },
+            "assignedDoctorName": { "type": "string" },
+            "status": { "type": "string" },
+            "createdAt": { "type": "string" }
+          }
+        },
+        "appointments": {
+          "fields": {
+            "id": { "type": "string" },
+            "patientId": { "type": "string" },
+            "patientName": { "type": "string" },
+            "doctorId": { "type": "string" },
+            "doctorName": { "type": "string" },
+            "date": { "type": "string" },
+            "timeSlot": { "type": "string" },
+            "status": { "type": "string" },
+            "createdAt": { "type": "string" }
+          }
+        },
+        "consultations": {
+          "fields": {
+            "id": { "type": "string" },
+            "patientId": { "type": "string" },
+            "patientName": { "type": "string" },
+            "doctorId": { "type": "string" },
+            "doctorName": { "type": "string" },
+            "diagnosis": { "type": "string" },
+            "clinicalNotes": { "type": "string" },
+            "prescription": { "type": "string" },
+            "createdAt": { "type": "string" }
+          }
+        },
+        "users": {
+          "fields": {
+            "email": { "type": "string" },
+            "name": { "type": "string" },
+            "role": { "type": "string" },
+            "createdAt": { "type": "string" }
+          }
+        },
+        "doctors": {
+          "fields": {
+            "id": { "type": "string" },
+            "name": { "type": "string" },
+            "specialty": { "type": "string" },
+            "fee": { "type": "number" },
+            "avatar": { "type": "string" },
+            "availability": { "type": "string" },
+            "loadToday": { "type": "number" }
+          }
+        }
+      }
+    }
+  }
+}

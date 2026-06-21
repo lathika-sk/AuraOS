@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  
+  --color-neon-cyan: oklch(0.78 0.18 215);
+  --color-neon-violet: oklch(0.65 0.22 280);
+  --color-neon-rose: oklch(0.65 0.25 10);
+  --color-neon-green: oklch(0.80 0.18 140);
+  --color-clinic-bg: oklch(0.14 0.02 240);
+  --color-clinic-card: rgba(10, 16, 32, 0.65);
+}
+
+/* Custom styles for professional futuristic feel */
+body {
+  background-color: oklch(0.16 0.03 240);
+  color: #f3f4f6;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Glow effects */
+.glow-cyan-text {
+  text-shadow: 0 0 12px oklch(0.78 0.18 215 / 0.6);
+}
+
+.glow-violet-text {
+  text-shadow: 0 0 12px oklch(0.65 0.22 280 / 0.6);
+}
+
+.glow-green-text {
+  text-shadow: 0 0 12px oklch(0.80 0.18 140 / 0.6);
+}
+
+.glow-rose-text {
+  text-shadow: 0 0 12px oklch(0.65 0.25 10 / 0.6);
+}
+
+.glass-panel {
+  background: rgba(10, 16, 32, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-cyan {
+  background: rgba(10, 16, 32, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(120, 200, 255, 0.15);
+}
+
+.glass-panel-violet {
+  background: rgba(10, 16, 32, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(160, 100, 255, 0.15);
+}
+
+/* Custom scrollbar for cyber grid dashboard */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(10, 16, 32, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(120, 200, 255, 0.25);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 200, 255, 0.5);
+}
+
+/* Dynamic pulse and breathing animations */
+@keyframes grid-pulse {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.25; }
+}
+
+.grid-overlay {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(120, 150, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(120, 150, 255, 0.03) 1px, transparent 1px);
+  animation: grid-pulse 8s ease-in-out infinite;
+}
+
+/* Pulse keyframes for buttons & badges */
+@keyframes pulse-glow-cyan {
+  0%, 100% { box-shadow: 0 0 5px oklch(0.78 0.18 215 / 0.2), inset 0 0 2px oklch(0.78 0.18 215 / 0.1); }
+  50% { box-shadow: 0 0 15px oklch(0.78 0.18 215 / 0.5), inset 0 0 5px oklch(0.78 0.18 215 / 0.2); }
+}
+
+.glow-btn-cyan {
+  animation: pulse-glow-cyan 3s infinite;
+}
+
+/* Soft ambient float */
+@keyframes ambient-float {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-15px) scale(1.05); }
+}
+
+.ambient-orb {
+  animation: ambient-float 10s ease-in-out infinite;
+}
+
+/* Base Form Input Autofill Fixes */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: #ffffff !important;
+  -webkit-box-shadow: 0 0 0px 1000px oklch(0.12 0.02 240) inset !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+
+input {
+  color: #ffffff !important;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "Aura Clinic OS",
+  "description": "A premium, futuristic Smart Clinic Management System for Indian hospitals featuring responsive glassmorphism and real-time medical queue analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

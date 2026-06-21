@@ -1,0 +1,58 @@
+import { Doctor } from '../types';
+
+export const DOCTORS: Doctor[] = [
+  {
+    id: 'doc-1',
+    name: 'Dr. Amit Verma',
+    specialty: 'Cardiology',
+    fee: 1200,
+    avatar: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=200&h=200',
+    availability: '09:00 AM - 01:00 PM',
+    loadToday: 14,
+  },
+  {
+    id: 'doc-2',
+    name: 'Dr. Priya Nair',
+    specialty: 'Neurology',
+    fee: 1500,
+    avatar: 'https://images.unsplash.com/photo-1594824813573-246434de83fb?auto=format&fit=crop&q=80&w=200&h=200',
+    availability: '10:00 AM - 03:00 PM',
+    loadToday: 8,
+  },
+  {
+    id: 'doc-3',
+    name: 'Dr. Rajesh Sharma',
+    specialty: 'Orthopedics',
+    fee: 1000,
+    avatar: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=200&h=200',
+    availability: '11:00 AM - 05:00 PM',
+    loadToday: 11,
+  },
+  {
+    id: 'doc-4',
+    name: 'Dr. Sneha Patil',
+    specialty: 'General Medicine',
+    fee: 700,
+    avatar: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=200&h=200',
+    availability: '08:00 AM - 02:00 PM',
+    loadToday: 22,
+  },
+  {
+    id: 'doc-5',
+    name: 'Dr. Vikram Sen',
+    specialty: 'Radiology',
+    fee: 1100,
+    avatar: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=200&h=200',
+    availability: '01:00 PM - 06:00 PM',
+    loadToday: 6,
+  },
+  {
+    id: 'doc-6',
+    name: 'Dr. Ananya Iyer',
+    specialty: 'Pediatrics',
+    fee: 900,
+    avatar: 'https://images.unsplash.com/photo-1591604021695-0c69b7c05981?auto=format&fit=crop&q=80&w=200&h=200',
+    availability: '02:00 PM - 07:00 PM',
+    loadToday: 12,
+  },
+];
